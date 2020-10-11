@@ -1,0 +1,28 @@
+#include <stdio.h>  /*calcuate prime interest rate*/
+#include <math.h>
+#include <time.h>
+#include<stdlib.h>
+int main(){
+  float a,b,c,d;
+  printf("enter the principle amount: ");
+  scanf("%f", &a);
+  printf("enter the loan tenure in years:");
+  scanf("%f",&b);
+  printf("enter interest annual prime rate: ");
+  scanf("%f", &c);
+  c = a*pow(c,b);
+  printf("Total amount repayable is %.2f\n", c);
+  d=c-a;
+  printf("Additional amount you will pay due to interest is %.2f=%.2f-%.2f\nep",d,c,a);
+  float i,j;
+  int k;
+  for (i=99; i>=0;i--){
+    k=99-i;
+    printf("%d YEAR has passed from House\n", k);
+    j=a*(i/99);
+    printf("house value after depreciation is %.2f\n", j);
+
+  }
+
+  return 0;
+}
